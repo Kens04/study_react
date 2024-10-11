@@ -20,11 +20,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.title {
-  font-size: 4rem;
-  text-transform: capitalize;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
