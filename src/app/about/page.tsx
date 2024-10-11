@@ -1,4 +1,5 @@
 import { Footer } from "@/components/Footer";
+import { Headline } from "@/components/Headline";
 import { Links } from "@/components/Links";
 import Image from "next/image";
 
@@ -14,16 +15,7 @@ export default function About() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <Headline page="about" />
         <Links />
       </main>
       <Footer />
