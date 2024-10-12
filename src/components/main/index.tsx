@@ -6,7 +6,7 @@ import Image from "next/image";
 
 type Props = {
   page: string;
-}
+};
 
 export function Main(props: Props) {
   return (
