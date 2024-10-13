@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export function Headline(props: Props) {
+export const Headline = (props: Props) => {
   return (
     <div>
       <h1 className={styles.title}>{props.page} page</h1>

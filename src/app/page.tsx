@@ -7,7 +7,7 @@ import { useBgColor } from "@/hooks/useBgColor";
 import { useCounter } from "@/hooks/useCounter";
 import { useInputArray } from "@/hooks/useInputArray";
 
-export default function Home() {
+const Home = () => {
   const { doubleCount, isShow, handleClick, handleDisplay } = useCounter();
   const { text, array, handleChange, handleAdd } = useInputArray();
   useBgColor();
@@ -30,3 +30,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

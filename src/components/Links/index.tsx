@@ -3,7 +3,7 @@ interface LinkItem {
   href: string;
 }
 
-export function Links({items, handleReduce}: {items: LinkItem[], handleReduce: () => void}) {
+export const Links = ({items, handleReduce}: {items: LinkItem[], handleReduce: () => void}) => {
 
   return (
     <div className="flex gap-4 items-center flex-col sm:flex-row">
