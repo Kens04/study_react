@@ -1,26 +1,14 @@
-const ITEMS = [
-  {
-    href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
-    title: "Deploy now1",
-  },
-  {
-    href: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
-    title: "Read our docs2",
-  },
-  {
-    href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
-    title: "Deploy now3",
-  },
-  {
-    href: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
-    title: "Read our docs4",
-  },
-];
+interface LinkItem {
+  title: string;
+  href: string;
+}
 
-export function Links() {
+export function Links({items, handleReduce}: {items: LinkItem[], handleReduce: () => void}) {
+
   return (
     <div className="flex gap-4 items-center flex-col sm:flex-row">
-      {ITEMS.map((item) => {
+      <button onClick={handleReduce}>減らす</button>
+      {items.map((item) => {
         return (
           <a
             key={item.href}
